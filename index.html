@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#0a1628">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title>For Augenstern</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="game-canvas"></canvas>
+        <div id="ui-layer-base"></div>
+        <div id="ui-layer-game"></div>
+        <div id="ui-layer-popup"></div>
+        <div id="ui-layer-top"></div>
+        <div id="audio-unlock-overlay">
+            <div class="unlock-content">
+                <div class="star-icon">⭐</div>
+                <h1>For Augenstern</h1>
+                <p class="subtitle">献给我眼中的星辰</p>
+                <button id="start-btn">开始旅程</button>
+                <p class="hint">点击开始，开启属于你的冬日礼物</p>
+            </div>
+            <div class="snowflakes" aria-hidden="true">
+                <div class="snowflake">❄</div>
+                <div class="snowflake">❅</div>
+                <div class="snowflake">❆</div>
+                <div class="snowflake">❄</div>
+                <div class="snowflake">❅</div>
+                <div class="snowflake">❆</div>
+                <div class="snowflake">❄</div>
+                <div class="snowflake">❅</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 核心模块 -->
+    <script src="js/config.js"></script>
+    <script src="js/assets.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/loader.js"></script>
+    <script src="js/input.js"></script>
+    <script src="js/audio.js"></script>
+    <script src="js/tutorial.js"></script>
+    
+    <!-- 场景 -->
+    <script src="js/scenes/hubScene.js"></script>
+    <script src="js/scenes/treeScene.js"></script>
+    <script src="js/scenes/auroraScene.js"></script>
+    <script src="js/scenes/skiScene.js"></script>
+    <script src="js/scenes/finaleScene.js"></script>
+    
+    <!-- 游戏主体 -->
+    <script src="js/game.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
